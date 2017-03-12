@@ -69,6 +69,6 @@ allmeanstdmelt$activity <- as.factor(allmeanstdmelt$activity)
 avgeach <- dcast(allmeanstdmelt,subject + activity ~ variable,mean)
 
 ##  5.4) Write the dataset from the previous table into file using write.table function
-write.table(avgeach,"./avgeach_tidy.txt")
+write.table(avgeach,"./avgeach_tidy.txt",row.names = FALSE)
 
 ## Done!!
